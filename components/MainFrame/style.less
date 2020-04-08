@@ -1,0 +1,37 @@
+@import '../style';
+
+.main-frame {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+
+  & > div {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .upper {
+    border: none;
+  }
+  .center {
+    border: gainsboro solid;
+    border-bottom: none;
+  }
+  .downer {
+    border: gainsboro solid;
+  }
+  .cell {
+    justify-content: space-around;
+    height: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    // border-right: gainsboro solid @mainFrameBorder * @mainRate;
+  }
+}
