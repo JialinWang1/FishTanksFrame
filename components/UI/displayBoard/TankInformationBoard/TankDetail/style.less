@@ -1,4 +1,5 @@
 .tank-detail {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,5 +25,26 @@
 
   .input-width {
     text-align: right;
+  }
+
+  .delete-tank {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    position: absolute;
+    font-size: 12px;
+    border-radius: 15px;
+    background-color: #fff;
+    width: 18px;
+    height: 18px;
+    border: 1px solid rgb(76, 76, 80);
+    right: -6px;
+    top: -6px;
+  }
+  .delete-tank:hover{
+    background-color: #000;
+    color: #fff;
+    border: 1px solid rgb(199, 199, 199);
+
   }
 }

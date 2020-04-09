@@ -66,6 +66,14 @@ function rootReducer(state = defaultState, action) {
         tankList,
       };
     }
+    case actions.DELETE_TANK: {
+      const tankList = JSON.parse(JSON.stringify(state.tankList));
+      tankList[defaultLevel[action.data.level]].splice(action.data.index, 1);
+      return {
+        ...state,
+        tankList,
+      };
+    }
     default:
       break;
   }
